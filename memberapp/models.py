@@ -3,7 +3,7 @@ from django.urls import reverse
 
 # Create your models here
 class Member(models.Model):
-    first_name = models.CharField(max_length=3)
+    first_name = models.CharField(max_length=200)
     last_name = models.CharField(max_length=200)
     email = models.EmailField(max_length = 254)
     phone = models.CharField(max_length = 200)
