@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-5p&6@y)@rhyhic9tn8s41=%vw=-^*v*rm(wv+=b*foc99%5g05
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['instawork-asssignment-prasanth.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['instawork-asssignment-prasanth.herokuapp.com', '127.0.0.1', 'localhost', '0.0.0.0']
 
 
 # Application definition
@@ -80,14 +80,11 @@ DatabaseWrapper.data_types['DateTimeField'] = 'datetime' # fix for MySQL 5.5
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'sql5459075',
-        'USER': 'sql5459075',
-        'PASSWORD': 'HTWrreWk4L',
-        'HOST': 'sql5.freemysqlhosting.net',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators

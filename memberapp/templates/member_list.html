@@ -20,7 +20,7 @@
 
                 <span><img src={% static 'images/user.png' %} alt="user_profile"></span>
                 <div>
-                    <p class="name">{{ member.first_name }} {{ member.last_name }}</p>
+                    <p class="name">{{ member.first_name }} {{ member.last_name }} {% if member.is_admin %} (admin) {% endif %} </p>
                     <p>{{ member.phone }}</p>
                     <p>{{ member.email }}</p>
                 </div>

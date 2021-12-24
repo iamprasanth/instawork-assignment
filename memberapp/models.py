@@ -7,7 +7,7 @@ class Member(models.Model):
     last_name = models.CharField(max_length=200)
     email = models.EmailField(max_length = 254)
     phone = models.CharField(max_length = 200)
-    role = models.BooleanField()
+    is_admin = models.BooleanField()
 
     def __str__(self):
         return self.title

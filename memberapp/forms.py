@@ -4,7 +4,7 @@ from django.core.validators import RegexValidator
 
 FRUIT_CHOICES= [
     (False, "Regular - Can't delete members"),
-    (True, 'Can delete members'),
+    (True, 'Admin - Can delete members'),
 ]
 
 class MemberForm(forms.ModelForm):
@@ -22,8 +22,8 @@ class MemberForm(forms.ModelForm):
             ),
     ],
     )
-    role = forms.ChoiceField(label='Role', required = True, initial=False, choices=FRUIT_CHOICES, widget=forms.RadioSelect)
+    is_admin = forms.ChoiceField(label='Role', required = True, initial=False, choices=FRUIT_CHOICES, widget=forms.RadioSelect)
 
     class Meta:
         model = Member
-        fields = ['first_name', 'last_name', 'email', 'phone', 'role']
+        fields = ['first_name', 'last_name', 'email', 'phone', 'is_admin']
