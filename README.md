@@ -7,9 +7,9 @@ Database of choice is SQLite. Frontend is developed using plain HTML & CSS.
 
 ## Sample screen
 
-![alt text](https://github.com/iamprasanth/instawork-assignment/blob/main/memberapp/static/screens/screen1.png?raw=true)
+![alt text](https://github.com/iamprasanth/instawork-assignment/blob/main/memberapp/static/screens/screen1.png?raw=true=200x200))
 
-![alt text](https://github.com/iamprasanth/instawork-assignment/blob/main/memberapp/static/screens/screen2.png?raw=true)
+![alt text](https://github.com/iamprasanth/instawork-assignment/blob/main/memberapp/static/screens/screen2.png?raw=true=200x200))
 
 ## Testing the app using docker
 
